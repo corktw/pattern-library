@@ -1,1 +1,148 @@
 @import "../setting/variables";
+
+/*================================================*
+ * General.
+ *================================================*/
+
+
+html {
+    /* basic font. */
+    font-size: 1em;
+}
+
+html,
+input,
+button,
+textarea {
+    /* for text anti-alias. */
+    -webkit-font-smoothing: anti-aliased;
+    text-rendering: optimizeLegibility;
+}
+
+body {
+    /* for general typography. */
+    color: $text-color;
+    font-family: $body-font-family;
+    line-height: $baseline;
+}
+
+p {
+    /* Box Behaviour. */
+    margin-bottom: $baseline;
+}
+
+/*================================================*
+ * Links.
+ *================================================*/
+
+
+a,
+a:visited {
+    /* links. */
+    color: $link-color;
+
+    &:hover {
+        /* links hover state. */
+        color: $text-color;
+    }    
+}
+
+/*================================================*
+ * Hr.
+ *================================================*/
+
+
+hr {
+    /* remove hr border. */
+    border: 0;
+
+    /* define border color */
+    background-color: $hr-color;
+
+    /* define border height */
+    height: 1px;
+
+    /* box behaviour */
+    margin: $baseline 0;
+}
+
+/*================================================*
+ * Header.
+ *================================================*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    /* box behaviour. */
+    margin: $baseline 0 .5em;
+
+    /* reduce line height for heading */  
+    line-height: 1.2;
+}
+
+h5,
+h6 {
+    /* set smaller header line-height to normal */
+    line-height: 1.5;
+    /* set bigger letter-spacing for smaller header (easier to read) */
+    letter-spacing: 1px;
+    /* for special header. */
+    text-transform: uppercase;
+}
+
+/* for header size */
+h1 {
+    font-size: $h1-size;
+}
+
+h2 {
+    font-size: $h2-size;
+}
+
+h3 {
+    font-size: $h3-size;
+}
+
+h4 {
+    font-size: $h4-size;
+}
+
+h5 {
+    font-size: $h5-size;
+}
+
+h6 {
+    font-size: $h6-size;
+}
+
+/*================================================*
+ * Lists.
+ *================================================*/
+
+ul,
+ol {
+    /* box behaviour. */
+    margin: 0 0 $baseline $baseline;
+}
+
+/*================================================*
+ * Blockquote.
+ *================================================*/
+
+blockquote {
+    /* box behaviour */
+    margin-left: $baseline;
+
+    /* typography. */
+    color: $muted-text-color;
+    font-style: italic;
+
+    footer {
+        @extend small;
+        /* borrow from html */
+        font-style: normal;
+    }
+}
