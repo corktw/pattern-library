@@ -1,1 +1,72 @@
 @import "../setting/variables";
+
+button,
+.btn,
+a.btn {
+    /* remove border. */
+    border: 0;
+    text-decoration: none; //for anchor tag btn
+
+    /* btn styles. */
+    border-radius: $btn-roundness;
+    background-color: $btn-default-bg;
+    color: $btn-default-text-color;
+
+     /* for btn cursor styles (for all). */
+    cursor: pointer;
+    
+    /* allow box model values */
+    display: inline-block;
+    /* box behaviour */
+    padding: .75em 1.5em;   
+
+    /* prevent certain bugs for input element */
+    line-height: 1; 
+    font-family: inherit;
+    font-size: inherit;
+
+    &:hover {
+        /* hover state. */
+        background-color: $text-color;
+
+        color: #fff;
+    }
+    
+    &:active {
+        /* Style for pressed state. */
+        background-color: lighten($text-color, 10%);
+        // Slightly different than hover state
+    }
+
+    &:focus {
+        /* Get rid of focus blue hellow */
+        outline: none;
+    }
+}
+            
+.btn-primary {
+    /* extend .btn. */
+    @extend .btn;
+    // so don't need to apply class="btn btn-*"
+
+    background-color: $btn-primary-bg;
+
+    color: $btn-primary-text-color;
+}
+
+.btn-small {
+    /* extend .btn. */
+    @extend .btn;
+    // so don't need to apply class="btn btn-*"
+
+    font-size: $btn-small-font-size;
+}
+
+.btn-large {
+    /* extend .btn. */
+    @extend .btn;
+    // so don't need to apply class="btn btn-*"
+
+    font-size: $btn-large-font-size;
+    font-weight: bold;
+}

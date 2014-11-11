@@ -482,6 +482,9 @@ th {
 /* size */
 /* from type-scale.com */
 /*================================================*
+ * Button Variables.
+ *================================================*/
+/*================================================*
  * Containers.
  *================================================*/
 /* line 7, basic\_grid.scss */
@@ -671,6 +674,9 @@ img {
 /* size */
 /* from type-scale.com */
 /*================================================*
+ * Button Variables.
+ *================================================*/
+/*================================================*
  * General.
  *================================================*/
 /* line 8, basic\_typography.scss */
@@ -833,6 +839,98 @@ blockquote footer {
 /* font */
 /* size */
 /* from type-scale.com */
+/*================================================*
+ * Button Variables.
+ *================================================*/
+/* line 3, basic\_buttons.scss */
+button,
+.btn,
+.btn-primary,
+.btn-small,
+.btn-large,
+a.btn,
+a.btn-primary,
+a.btn-small,
+a.btn-large {
+  /* remove border. */
+  border: 0;
+  text-decoration: none;
+  /* btn styles. */
+  border-radius: 3px;
+  background-color: #dde2d4;
+  color: #333333;
+  /* for btn cursor styles (for all). */
+  cursor: pointer;
+  /* allow box model values */
+  display: inline-block;
+  /* box behaviour */
+  padding: .75em 1.5em;
+  /* prevent certain bugs for input element */
+  line-height: 1;
+  font-family: inherit;
+  font-size: inherit;
+}
+/* line 28, basic\_buttons.scss */
+button:hover,
+.btn:hover,
+.btn-primary:hover,
+.btn-small:hover,
+.btn-large:hover,
+a.btn:hover,
+a.btn-primary:hover,
+a.btn-small:hover,
+a.btn-large:hover {
+  /* hover state. */
+  background-color: #333333;
+  color: #fff;
+}
+/* line 35, basic\_buttons.scss */
+button:active,
+.btn:active,
+.btn-primary:active,
+.btn-small:active,
+.btn-large:active,
+a.btn:active,
+a.btn-primary:active,
+a.btn-small:active,
+a.btn-large:active {
+  /* Style for pressed state. */
+  background-color: #4d4d4d;
+}
+/* line 41, basic\_buttons.scss */
+button:focus,
+.btn:focus,
+.btn-primary:focus,
+.btn-small:focus,
+.btn-large:focus,
+a.btn:focus,
+a.btn-primary:focus,
+a.btn-small:focus,
+a.btn-large:focus {
+  /* Get rid of focus blue hellow */
+  outline: none;
+}
+
+/* line 47, basic\_buttons.scss */
+.btn-primary {
+  /* extend .btn. */
+  background-color: #0f82bd;
+  color: #d0ecfb;
+}
+
+/* line 57, basic\_buttons.scss */
+.btn-small {
+  /* extend .btn. */
+  font-size: 0.75em;
+}
+
+/* line 65, basic\_buttons.scss */
+.btn-large {
+  /* extend .btn. */
+  font-size: 2em;
+  font-weight: bold;
+}
+
 /************************************************************ 
  *    02.04 - forms
  ************************************************************/
@@ -847,6 +945,9 @@ blockquote footer {
 /* font */
 /* size */
 /* from type-scale.com */
+/*================================================*
+ * Button Variables.
+ *================================================*/
 /************************************************************ 
  *    02.05 - icons
  ************************************************************/
@@ -861,6 +962,9 @@ blockquote footer {
 /* font */
 /* size */
 /* from type-scale.com */
+/*================================================*
+ * Button Variables.
+ *================================================*/
 /*********************************************************** 
 *    02.06 - feedback
 ************************************************************/
@@ -875,6 +979,9 @@ blockquote footer {
 /* font */
 /* size */
 /* from type-scale.com */
+/*================================================*
+ * Button Variables.
+ *================================================*/
 /**********************************************************************
  *---------------------------------------------------------------------
  * 03.00 - Advanced Patterns
@@ -894,6 +1001,9 @@ blockquote footer {
 /* font */
 /* size */
 /* from type-scale.com */
+/*================================================*
+ * Button Variables.
+ *================================================*/
 /************************************************************ 
  *    03.02 - tabs.
  ************************************************************/
@@ -908,6 +1018,9 @@ blockquote footer {
 /* font */
 /* size */
 /* from type-scale.com */
+/*================================================*
+ * Button Variables.
+ *================================================*/
 /************************************************************ 
  *    03.03 - accordions.
  ************************************************************/
@@ -922,6 +1035,9 @@ blockquote footer {
 /* font */
 /* size */
 /* from type-scale.com */
+/*================================================*
+ * Button Variables.
+ *================================================*/
 /************************************************************ 
  *    03.04 - carousels.
  ************************************************************/
@@ -936,3 +1052,6 @@ blockquote footer {
 /* font */
 /* size */
 /* from type-scale.com */
+/*================================================*
+ * Button Variables.
+ *================================================*/
