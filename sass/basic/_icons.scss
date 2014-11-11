@@ -1,1 +1,33 @@
 @import "../setting/variables";
+
+[class^="icon-"] {
+    /* Style for icon. */
+    border: 1px solid $icon-border-color;
+    height: 3em;
+    width: 3em;
+    padding: .25em;
+    margin-bottom: $baseline; //for combine with text
+
+    text-align: center;
+
+    i{
+        line-height: 2.5em; // height-padding*2
+     }
+
+}
+
+.icon-circle {
+    border-radius: 100%;
+}
+
+.icon-rounded {
+    border-radius: $icon-roundness;
+}
+
+.icon-large {
+    font-size: 150%;
+}
+
+.icon-huge {
+    font-size: 250%;
+}
