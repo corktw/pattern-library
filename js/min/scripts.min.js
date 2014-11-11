@@ -1,0 +1,1 @@
+$(function(){var e=$(".sf-menu");e.clone().removeClass().addClass("rwd-menu").prependTo(".navbar-container nav"),e.superfish(),$("#rwd-trigger").on("click",function(e){e.preventDefault(),$(".rwd-menu").slideToggle()})});
