@@ -149,7 +149,7 @@ mark {
  * Address inconsistent and variable font size in all browsers.
  */
 /* line 143, setting\_normalize.scss */
-small, blockquote footer {
+small, blockquote footer, form .field-group .help {
   font-size: 80%;
 }
 
@@ -485,6 +485,9 @@ th {
  * Button Variables.
  *================================================*/
 /*================================================*
+ * Form Variables.
+ *================================================*/
+/*================================================*
  * Containers.
  *================================================*/
 /* line 7, basic\_grid.scss */
@@ -677,6 +680,9 @@ img {
  * Button Variables.
  *================================================*/
 /*================================================*
+ * Form Variables.
+ *================================================*/
+/*================================================*
  * General.
  *================================================*/
 /* line 8, basic\_typography.scss */
@@ -843,6 +849,9 @@ blockquote footer {
  * Button Variables.
  *================================================*/
 /*================================================*
+ * Form Variables.
+ *================================================*/
+/*================================================*
  * General btn.
  *================================================*/
 /* line 7, basic\_buttons.scss */
@@ -954,6 +963,140 @@ a.btn-large:focus {
 /*================================================*
  * Button Variables.
  *================================================*/
+/*================================================*
+ * Form Variables.
+ *================================================*/
+/* line 3, basic\_forms.scss */
+form {
+  /* fields. */
+  /* recreate elements for customization */
+  /* check character */
+}
+/* line 5, basic\_forms.scss */
+form .field-group {
+  /* box behaviour. */
+  margin-bottom: 1em;
+}
+/* line 9, basic\_forms.scss */
+form .field-group label {
+  /* box behaviour. */
+  display: block;
+  margin-bottom: .5em;
+  /* typograpy */
+  font-weight: bold;
+}
+/* line 17, basic\_forms.scss */
+form .field-group input:not([class^="btn"]),
+form .field-group textarea {
+  /* box style. */
+  border: 1px solid #cccccc;
+  /* box behaviour */
+  padding: 0.75em;
+}
+/* line 25, basic\_forms.scss */
+form .field-group input:not([class^="btn"]):focus, form .field-group input:not([class^="btn"]):hover,
+form .field-group textarea:focus,
+form .field-group textarea:hover {
+  /* hover focus style */
+  border-color: #a6a6a6;
+  outline: none;
+}
+/* line 32, basic\_forms.scss */
+form .field-group input:not([class^="btn"]).field-fw,
+form .field-group textarea.field-fw {
+  /* for full width fields */
+  width: 100%;
+}
+/* line 38, basic\_forms.scss */
+form .field-group .help {
+  /* box behaviour */
+  margin: .5em 0 0;
+  /* smaller. */
+  color: gray;
+  font-style: italic;
+}
+/* line 48, basic\_forms.scss */
+form .field-group.field-error {
+  /* Style for field-error. */
+}
+/* line 50, basic\_forms.scss */
+form .field-group.field-error label,
+form .field-group.field-error .help,
+form .field-group.field-error input {
+  color: red;
+  border-color: #ffcccc;
+}
+/* line 60, basic\_forms.scss */
+form .required {
+  /* for required stars */
+  color: red;
+}
+/* line 65, basic\_forms.scss */
+form fieldset {
+  /* Style for fieldset. */
+  border-color: #cccccc;
+  /* box behaviour */
+  padding: 1.5em;
+  margin-bottom: 1.5em;
+}
+/* line 74, basic\_forms.scss */
+form fieldset legend {
+  /* Style for legend. */
+  font-weight: bold;
+  /* Box Behaviour */
+  padding: 0 .5em;
+}
+/* line 85, basic\_forms.scss */
+form input[type="checkbox"],
+form input[type="radio"] {
+  /* remove default element */
+  display: none;
+}
+/* line 92, basic\_forms.scss */
+form input[type="checkbox"] + label:before {
+  /* insert element between label and input */
+  content: "";
+  display: inline-block;
+  height: 1.25em;
+  width: 1.25em;
+  /* box behaviour */
+  line-height: 1.25em;
+  margin: -2px 6px 0 0;
+  font-size: 0.75em;
+  vertical-align: middle;
+  text-align: center;
+  /* style */
+  background-color: #fff;
+  border: 1px solid #cccccc;
+}
+/* line 112, basic\_forms.scss */
+form input[type="checkbox"]:checked + label:before {
+  content: "\2713";
+}
+/* line 117, basic\_forms.scss */
+form input[type="radio"] + label:before {
+  /* insert element between label and input */
+  content: "";
+  display: inline-block;
+  height: .6em;
+  width: .6em;
+  /* box behaviour */
+  line-height: .6em;
+  margin: -2px 6px 0 0;
+  /* element position adjustment*/
+  vertical-align: middle;
+  text-align: center;
+  /* style */
+  font-size: 1.65em;
+  background-color: #fff;
+  border: 1px solid #cccccc;
+  border-radius: 1.25em;
+}
+/* line 139, basic\_forms.scss */
+form input[type="radio"]:checked + label:before {
+  content: "\2022";
+}
+
 /************************************************************ 
  *    02.05 - icons
  ************************************************************/
@@ -971,6 +1114,9 @@ a.btn-large:focus {
 /*================================================*
  * Button Variables.
  *================================================*/
+/*================================================*
+ * Form Variables.
+ *================================================*/
 /*********************************************************** 
 *    02.06 - feedback
 ************************************************************/
@@ -987,6 +1133,9 @@ a.btn-large:focus {
 /* from type-scale.com */
 /*================================================*
  * Button Variables.
+ *================================================*/
+/*================================================*
+ * Form Variables.
  *================================================*/
 /**********************************************************************
  *---------------------------------------------------------------------
@@ -1010,6 +1159,9 @@ a.btn-large:focus {
 /*================================================*
  * Button Variables.
  *================================================*/
+/*================================================*
+ * Form Variables.
+ *================================================*/
 /************************************************************ 
  *    03.02 - tabs.
  ************************************************************/
@@ -1026,6 +1178,9 @@ a.btn-large:focus {
 /* from type-scale.com */
 /*================================================*
  * Button Variables.
+ *================================================*/
+/*================================================*
+ * Form Variables.
  *================================================*/
 /************************************************************ 
  *    03.03 - accordions.
@@ -1044,6 +1199,9 @@ a.btn-large:focus {
 /*================================================*
  * Button Variables.
  *================================================*/
+/*================================================*
+ * Form Variables.
+ *================================================*/
 /************************************************************ 
  *    03.04 - carousels.
  ************************************************************/
@@ -1060,4 +1218,7 @@ a.btn-large:focus {
 /* from type-scale.com */
 /*================================================*
  * Button Variables.
+ *================================================*/
+/*================================================*
+ * Form Variables.
  *================================================*/
