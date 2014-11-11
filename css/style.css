@@ -842,7 +842,10 @@ blockquote footer {
 /*================================================*
  * Button Variables.
  *================================================*/
-/* line 3, basic\_buttons.scss */
+/*================================================*
+ * General btn.
+ *================================================*/
+/* line 7, basic\_buttons.scss */
 button,
 .btn,
 .btn-primary,
@@ -870,7 +873,7 @@ a.btn-large {
   font-family: inherit;
   font-size: inherit;
 }
-/* line 28, basic\_buttons.scss */
+/* line 32, basic\_buttons.scss */
 button:hover,
 .btn:hover,
 .btn-primary:hover,
@@ -884,7 +887,7 @@ a.btn-large:hover {
   background-color: #333333;
   color: #fff;
 }
-/* line 35, basic\_buttons.scss */
+/* line 39, basic\_buttons.scss */
 button:active,
 .btn:active,
 .btn-primary:active,
@@ -897,7 +900,7 @@ a.btn-large:active {
   /* Style for pressed state. */
   background-color: #4d4d4d;
 }
-/* line 41, basic\_buttons.scss */
+/* line 45, basic\_buttons.scss */
 button:focus,
 .btn:focus,
 .btn-primary:focus,
@@ -911,20 +914,23 @@ a.btn-large:focus {
   outline: none;
 }
 
-/* line 47, basic\_buttons.scss */
+/*================================================*
+ * Extended btn.
+ *================================================*/
+/* line 56, basic\_buttons.scss */
 .btn-primary {
   /* extend .btn. */
   background-color: #0f82bd;
   color: #d0ecfb;
 }
 
-/* line 57, basic\_buttons.scss */
+/* line 66, basic\_buttons.scss */
 .btn-small {
   /* extend .btn. */
   font-size: 0.75em;
 }
 
-/* line 65, basic\_buttons.scss */
+/* line 74, basic\_buttons.scss */
 .btn-large {
   /* extend .btn. */
   font-size: 2em;
