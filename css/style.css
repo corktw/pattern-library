@@ -494,6 +494,9 @@ th {
  * Feedback Variables.
  *================================================*/
 /*================================================*
+ * Navigation Variables.
+ *================================================*/
+/*================================================*
  * Containers.
  *================================================*/
 /* line 7, basic\_grid.scss */
@@ -695,6 +698,9 @@ img {
  * Feedback Variables.
  *================================================*/
 /*================================================*
+ * Navigation Variables.
+ *================================================*/
+/*================================================*
  * General.
  *================================================*/
 /* line 8, basic\_typography.scss */
@@ -870,6 +876,9 @@ blockquote footer {
  * Feedback Variables.
  *================================================*/
 /*================================================*
+ * Navigation Variables.
+ *================================================*/
+/*================================================*
  * General btn.
  *================================================*/
 /* line 7, basic\_buttons.scss */
@@ -989,6 +998,9 @@ a.btn-large:focus {
  *================================================*/
 /*================================================*
  * Feedback Variables.
+ *================================================*/
+/*================================================*
+ * Navigation Variables.
  *================================================*/
 /* line 3, basic\_forms.scss */
 form {
@@ -1147,6 +1159,9 @@ form input[type="radio"]:checked + label:before {
 /*================================================*
  * Feedback Variables.
  *================================================*/
+/*================================================*
+ * Navigation Variables.
+ *================================================*/
 /* line 3, basic\_icons.scss */
 [class^="icon-"] {
   /* Style for icon. */
@@ -1207,6 +1222,9 @@ form input[type="radio"]:checked + label:before {
  *================================================*/
 /*================================================*
  * Feedback Variables.
+ *================================================*/
+/*================================================*
+ * Navigation Variables.
  *================================================*/
 /* line 3, basic\_feedback.scss */
 [class^="alert-"] {
@@ -1293,6 +1311,181 @@ form input[type="radio"]:checked + label:before {
 /*================================================*
  * Feedback Variables.
  *================================================*/
+/*================================================*
+ * Navigation Variables.
+ *================================================*/
+/* line 4, advanced\_navigation.scss */
+.navbar-container #rwd-trigger {
+  /* hide reponsive menu trigger */
+  display: none;
+}
+/* line 9, advanced\_navigation.scss */
+.navbar-container .sf-menu {
+  /* shift to right */
+  float: right;
+}
+/* line 14, advanced\_navigation.scss */
+.navbar-container .rwd-menu {
+  /* hide responsive menu */
+  display: none;
+}
+/* line 18, advanced\_navigation.scss */
+.navbar-container .rwd-menu a {
+  /* box behaviour */
+  display: block;
+  padding: .75em 1.5em;
+  font-weight: bold;
+  text-decoration: none;
+}
+/* line 26, advanced\_navigation.scss */
+.navbar-container .rwd-menu a:active {
+  /* For mobile need to add active state on click */
+  background-color: #dde2d4;
+}
+/* line 32, advanced\_navigation.scss */
+.navbar-container .rwd-menu ul {
+  list-style-type: none;
+  margin-bottom: 0;
+}
+@media (max-width: 768px) {
+  /* line 40, advanced\_navigation.scss */
+  .navbar-container .logo img,
+  .navbar-container #rwd-trigger {
+    /* Box Behaviour */
+    display: block;
+    margin: 0 auto 1.5em auto;
+  }
+  /* line 47, advanced\_navigation.scss */
+  .navbar-container .sf-menu {
+    display: none;
+  }
+}
+
+/*================================================*
+ * SuperFish Demo Skin.
+ *================================================*/
+/* Superfish Essential Styles. */
+/* line 59, advanced\_navigation.scss */
+.sf-menu,
+.sf-menu * {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* line 66, advanced\_navigation.scss */
+.sf-menu li {
+  position: relative;
+}
+/* line 70, advanced\_navigation.scss */
+.sf-menu > li {
+  float: left;
+}
+/* line 74, advanced\_navigation.scss */
+.sf-menu ul {
+  position: absolute;
+  display: none;
+  top: 100%;
+  left: 0;
+  z-index: 99;
+}
+/* line 82, advanced\_navigation.scss */
+.sf-menu li:hover > ul,
+.sf-menu li.sfHover > ul {
+  display: block;
+}
+/* line 87, advanced\_navigation.scss */
+.sf-menu a {
+  display: block;
+  position: relative;
+}
+/* line 92, advanced\_navigation.scss */
+.sf-menu ul ul {
+  top: 0;
+  left: 100%;
+}
+
+/* Superfish Menu Skin. */
+/* line 101, advanced\_navigation.scss */
+.sf-menu ul {
+  min-width: 12em;
+  /* allow long menu items to determine submenu width */
+}
+/* line 105, advanced\_navigation.scss */
+.sf-menu a {
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  padding: .75em 1.5em;
+  color: #333333;
+  text-decoration: none;
+}
+/* line 114, advanced\_navigation.scss */
+.sf-menu li {
+  white-space: nowrap;
+  /* no need for Supersubs plugin */
+  -webkit-transition: background .2s;
+  transition: background .2s;
+}
+/* line 121, advanced\_navigation.scss */
+.sf-menu ul li {
+  background-color: #dde2e4;
+}
+/* line 125, advanced\_navigation.scss */
+.sf-menu ul ul li {
+  background-color: #c1cacd;
+}
+/* line 129, advanced\_navigation.scss */
+.sf-menu li:hover,
+.sf-menu li.sfHover {
+  background: #c1cacd;
+  /* only transition out, not in */
+  -webkit-transition: none;
+  transition: none;
+}
+
+/*** arrows (for all except IE7) **/
+/* line 140, advanced\_navigation.scss */
+.sf-arrows .sf-with-ul {
+  padding-right: 2.5em;
+}
+
+/* styling for both css and generated arrows */
+/* line 145, advanced\_navigation.scss */
+.sf-arrows .sf-with-ul:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 1em;
+  margin-top: -3px;
+  height: 0;
+  width: 0;
+  /* order of following 3 rules important for fallbacks to work */
+  border: 5px solid transparent;
+  border-top-color: #333333;
+}
+
+/* line 158, advanced\_navigation.scss */
+.sf-arrows > li > .sf-with-ul:focus:after,
+.sf-arrows > li:hover > .sf-with-ul:after,
+.sf-arrows > .sfHover > .sf-with-ul:after {
+  border-top-color: #333333;
+}
+
+/* styling for right-facing arrows */
+/* line 165, advanced\_navigation.scss */
+.sf-arrows ul .sf-with-ul:after {
+  margin-top: -5px;
+  margin-right: -3px;
+  border-color: transparent;
+  border-left-color: #333333;
+}
+
+/* line 171, advanced\_navigation.scss */
+.sf-arrows ul li > .sf-with-ul:focus:after,
+.sf-arrows ul li:hover > .sf-with-ul:after,
+.sf-arrows ul .sfHover > .sf-with-ul:after {
+  border-left-color: #333333;
+}
+
 /************************************************************ 
  *    03.02 - tabs.
  ************************************************************/
@@ -1318,6 +1511,9 @@ form input[type="radio"]:checked + label:before {
  *================================================*/
 /*================================================*
  * Feedback Variables.
+ *================================================*/
+/*================================================*
+ * Navigation Variables.
  *================================================*/
 /************************************************************ 
  *    03.03 - accordions.
@@ -1345,6 +1541,9 @@ form input[type="radio"]:checked + label:before {
 /*================================================*
  * Feedback Variables.
  *================================================*/
+/*================================================*
+ * Navigation Variables.
+ *================================================*/
 /************************************************************ 
  *    03.04 - carousels.
  ************************************************************/
@@ -1370,4 +1569,7 @@ form input[type="radio"]:checked + label:before {
  *================================================*/
 /*================================================*
  * Feedback Variables.
+ *================================================*/
+/*================================================*
+ * Navigation Variables.
  *================================================*/
