@@ -497,6 +497,12 @@ th {
  * Navigation Variables.
  *================================================*/
 /*================================================*
+ * Tabs Variables.
+ *================================================*/
+/*================================================*
+ * Accorion Variables.
+ *================================================*/
+/*================================================*
  * Containers.
  *================================================*/
 /* line 7, basic\_grid.scss */
@@ -701,6 +707,12 @@ img {
  * Navigation Variables.
  *================================================*/
 /*================================================*
+ * Tabs Variables.
+ *================================================*/
+/*================================================*
+ * Accorion Variables.
+ *================================================*/
+/*================================================*
  * General.
  *================================================*/
 /* line 8, basic\_typography.scss */
@@ -879,6 +891,12 @@ blockquote footer {
  * Navigation Variables.
  *================================================*/
 /*================================================*
+ * Tabs Variables.
+ *================================================*/
+/*================================================*
+ * Accorion Variables.
+ *================================================*/
+/*================================================*
  * General btn.
  *================================================*/
 /* line 7, basic\_buttons.scss */
@@ -1001,6 +1019,12 @@ a.btn-large:focus {
  *================================================*/
 /*================================================*
  * Navigation Variables.
+ *================================================*/
+/*================================================*
+ * Tabs Variables.
+ *================================================*/
+/*================================================*
+ * Accorion Variables.
  *================================================*/
 /* line 3, basic\_forms.scss */
 form {
@@ -1162,6 +1186,12 @@ form input[type="radio"]:checked + label:before {
 /*================================================*
  * Navigation Variables.
  *================================================*/
+/*================================================*
+ * Tabs Variables.
+ *================================================*/
+/*================================================*
+ * Accorion Variables.
+ *================================================*/
 /* line 3, basic\_icons.scss */
 [class^="icon-"] {
   /* Style for icon. */
@@ -1225,6 +1255,12 @@ form input[type="radio"]:checked + label:before {
  *================================================*/
 /*================================================*
  * Navigation Variables.
+ *================================================*/
+/*================================================*
+ * Tabs Variables.
+ *================================================*/
+/*================================================*
+ * Accorion Variables.
  *================================================*/
 /* line 3, basic\_feedback.scss */
 [class^="alert-"] {
@@ -1313,6 +1349,12 @@ form input[type="radio"]:checked + label:before {
  *================================================*/
 /*================================================*
  * Navigation Variables.
+ *================================================*/
+/*================================================*
+ * Tabs Variables.
+ *================================================*/
+/*================================================*
+ * Accorion Variables.
  *================================================*/
 /* line 4, advanced\_navigation.scss */
 .navbar-container #rwd-trigger {
@@ -1515,6 +1557,76 @@ form input[type="radio"]:checked + label:before {
 /*================================================*
  * Navigation Variables.
  *================================================*/
+/*================================================*
+ * Tabs Variables.
+ *================================================*/
+/*================================================*
+ * Accorion Variables.
+ *================================================*/
+/* line 3, advanced\_tabs.scss */
+.tabs-links {
+  margin: 0;
+  /* remove all margin */
+}
+/* line 6, advanced\_tabs.scss */
+.tabs-links:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 13, advanced\_tabs.scss */
+.tabs-links li {
+  float: left;
+  list-style-type: none;
+  margin-right: 1px;
+}
+/* line 19, advanced\_tabs.scss */
+.tabs-links li:first-child {
+  margin-left: .5em;
+}
+/* line 23, advanced\_tabs.scss */
+.tabs-links li a {
+  background-color: #ebeeef;
+  display: inline-block;
+  padding: 1em 1.5em;
+  color: gray;
+  text-decoration: none;
+}
+/* line 32, advanced\_tabs.scss */
+.tabs-links li a:hover {
+  background-color: #c1cacd;
+  color: #333333;
+}
+/* line 38, advanced\_tabs.scss */
+.tabs-links li.active a, .tabs-links li.active a:hover {
+  border: 1px solid #cccccc;
+  border-bottom: 0;
+  background-color: white;
+  color: #333333;
+  font-weight: bold;
+  margin-bottom: -1px;
+}
+
+/* line 53, advanced\_tabs.scss */
+.tabs-content {
+  border: 1px solid #cccccc;
+  background-color: #fff;
+  padding: 1.5em;
+}
+/* line 60, advanced\_tabs.scss */
+.tabs-content p:last-child {
+  margin-bottom: 0;
+}
+
+/* line 65, advanced\_tabs.scss */
+.tab {
+  display: none;
+}
+/* line 68, advanced\_tabs.scss */
+.tab.active {
+  display: block;
+}
+
 /************************************************************ 
  *    03.03 - accordions.
  ************************************************************/
@@ -1544,6 +1656,46 @@ form input[type="radio"]:checked + label:before {
 /*================================================*
  * Navigation Variables.
  *================================================*/
+/*================================================*
+ * Tabs Variables.
+ *================================================*/
+/*================================================*
+ * Accorion Variables.
+ *================================================*/
+/* line 3, advanced\_accordions.scss */
+.accordion {
+  border: 1px solid #cccccc;
+}
+
+/* line 7, advanced\_accordions.scss */
+.accordion-element-title {
+  border-bottom: 1px solid #cccccc;
+  background-color: #f1f3f7;
+  color: gray;
+  text-decoration: none;
+  display: block;
+  padding: 1.5em;
+}
+/* line 18, advanced\_accordions.scss */
+.accordion-element-title:hover, .accordion-element-title:active {
+  color: white;
+  background-color: #333333;
+}
+/* line 25, advanced\_accordions.scss */
+.accordion-element:last-child .accordion-element-title {
+  border-bottom: 0;
+}
+
+/* line 30, advanced\_accordions.scss */
+.accordion-element-content {
+  display: none;
+  padding: 1.5em;
+}
+/* line 34, advanced\_accordions.scss */
+.accordion-element-content p:last-child {
+  margin-bottom: 0;
+}
+
 /************************************************************ 
  *    03.04 - carousels.
  ************************************************************/
@@ -1572,4 +1724,10 @@ form input[type="radio"]:checked + label:before {
  *================================================*/
 /*================================================*
  * Navigation Variables.
+ *================================================*/
+/*================================================*
+ * Tabs Variables.
+ *================================================*/
+/*================================================*
+ * Accorion Variables.
  *================================================*/

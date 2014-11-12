@@ -1,1 +1,37 @@
 @import "../setting/variables";
+
+.accordion {
+    border: 1px solid $accordion-border-color;
+}
+
+.accordion-element-title {
+    border-bottom: 1px solid $accordion-border-color; //border between each item
+
+    background-color: lighten($accordion-inactive-bg-color, 15%);
+
+    color: lighten($text-color, 30%);
+    text-decoration: none; // remove underline
+
+    display: block; // box model
+    padding: 1.5em;
+
+    &:hover,
+    &:active {// hover=active
+        color: $accordion-active-text-color;
+
+        background-color: $accordion-active-bg-color;
+    }
+
+    .accordion-element:last-child & {
+        border-bottom: 0; // remove the double border(accordion&element)
+    }
+}
+
+.accordion-element-content {
+    display: none;
+    padding: 1.5em;
+
+    p:last-child {
+        margin-bottom: 0; // remove-margin-bottom of last paragraph
+    }
+}

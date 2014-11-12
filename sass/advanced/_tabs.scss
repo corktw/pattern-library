@@ -1,1 +1,76 @@
 @import "../setting/variables";
+
+.tabs-links {
+    margin: 0; /* remove all margin */
+
+    &:after { // clearfix
+        content: "";
+
+        display: table;
+        clear: both;
+    }
+
+    li {
+        float: left; // as horizontal need clearfix
+        list-style-type: none; // 
+
+        margin-right: 1px; // split the tags
+
+        &:first-child { // indent the tabs
+            margin-left: .5em;
+        }
+
+        a {//tabs
+            background-color: lighten($tabs-inactive-bg-color, 15%);
+
+            display: inline-block; // convert as horizontal boxes
+            padding: 1em 1.5em; // add box behaviour
+
+            color: lighten($text-color, 30%);
+            text-decoration: none; // remove the underline
+
+            &:hover {
+                background-color: $tabs-inactive-bg-color;
+                color: $text-color;
+            }
+        }
+
+        &.active a,
+        &.active a:hover {//active=hover
+            border: 1px solid $tabs-border-color;
+            border-bottom: 0; //tab blend to content
+
+            background-color: $tabs-active-bg-color;
+
+            color: $text-color;
+            font-weight: bold;
+
+            margin-bottom: -1px; //adjustment for gap between the tabs and content
+        }
+    }
+}
+
+.tabs-content {
+    border: 1px solid $tabs-border-color;
+
+    background-color: #fff;
+
+    padding: 1.5em;
+
+    p:last-child {// remove the last paragraph margin-bottom
+        margin-bottom: 0;
+    }
+}
+
+.tab {
+    display: none;
+
+    &.active {
+        display: block;
+    }
+}
+
+
+
+
+
