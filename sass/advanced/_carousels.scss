@@ -1,1 +1,42 @@
 @import "../setting/variables";
+
+.cycle-slideshow {
+    position: relative; // for position prev and next
+    .cycle-prev,
+    .cycle-next {
+        background-color: rgba( 255, 255, 255, .5);
+
+        display: inline-block;
+        height: 3em;
+        width: 3em;
+        margin-top: -1.5em; // adjust to totally center height/2
+        position: absolute; //relative the parent and absolute this
+        top: 50%; // vertical center the element's top left anchor need margin-top to fix
+        z-index: 10000;// bring forward
+
+        text-align: center; //horizontal center the icon
+        font-size: 1.5em; //
+        line-height: 3em; // for element vertical center
+        cursor: pointer;
+
+        &:hover {
+            background-color: rgba(255, 255, 255, .9);
+        }
+    }
+
+    .cycle-next {
+        right: 0;
+    }
+
+    .cycle-prev {
+        left: 0;
+    }
+
+    .cycle-caption {
+        margin: $baseline 0;
+
+        text-align: center;
+    }
+
+
+}

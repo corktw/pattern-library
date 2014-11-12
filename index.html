@@ -527,7 +527,7 @@
             <div class="row navbar-container"><!-- add additional class navbar-container for targetting -->
                 <div class="col-4">
                     <a href="#" class="logo">
-                        <img src="http://placehold.it/200x100&text=Logo" alt="Demo logo" />
+                        <img src="http://placehold.it/xfoo&text=Logo" alt="Demo logo" />
                     </a>
                 </div><!-- end .col-4 -->
                 <div class="col-8">
@@ -651,10 +651,33 @@
         </div><!-- end .container -->
     </section>
 
+    <!-- Carousels -->
+    <div class="section">
+        <div class="container">
+            <h1 id="nav-carousels">Carousels</h1>
+
+            <hr>
+
+            <div class="cycle-slideshow" data-cycle-fx="scrollHorz" data-cycle-timeout="3000" data-cycle-caption-template="Slide no. {{slideNum}} of {{slideCount}} - {{cycleTitle}}">
+                <div class="cycle-caption"></div>
+
+                <div class="cycle-prev"><i class="fa fa-chevron-left"></i></div>
+                <div class="cycle-next"><i class="fa fa-chevron-right"></i></div>
+
+                <img src="http://placehold.it/2000x1500&text=Carousel 1" alt="Slider image 1" data-cycle-title="First image">
+                <img src="http://placehold.it/2000x1500&text=Carousel 2" alt="Slider image 2" data-cycle-title="Second image">
+                <img src="http://placehold.it/2000x1500&text=Carousel 3" alt="Slider image 3" data-cycle-title="Third image">
+                <img src="http://placehold.it/2000x1500&text=Carousel 4" alt="Slider image 4" data-cycle-title="Fourth image">
+            </div> <!-- end cycle-slideshow -->
+        </div>
+    </div>
+
+
     <!-- Add Bower Components -->
-    <script src="bower_components\jquery\jquery.min.js"></script>
-    <script src="bower_components\superfish\dist\js\superfish.min.js"></script>
-    <script src="bower_components\superfish\dist\js\hoverIntent.js"></script>
+    <script src="bower_components/jquery/jquery.min.js"></script>
+    <script src="bower_components/superfish/dist/js/superfish.min.js"></script>
+    <script src="bower_components/superfish/dist/js/hoverIntent.js"></script>
+    <script src="bower_components/jquery-cycle2/build/jquery.cycle2.min.js"></script>
     <script src="js/scripts.js"></script>
 </body>
 </html>
