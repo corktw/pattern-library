@@ -9,15 +9,51 @@
 
     <!-- Stylesheets -->
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/prism.css" />
+
+    <!-- Bower Components -->
     <link rel="stylesheet" href="bower_components/fontawesome/css/font-awesome.min.css" />
     <link rel="stylesheet" href="bower_components/animate.css/animate.css" />
+
+    <!-- Presentation Only Styles -->
+    <link rel="stylesheet" href="" class="css" />
 </head>
 <body>
+
+    <!-- Presentation Widget -->
+    <div class="pres-widget">
+        <p><strong>Jump to:</strong></p>
+
+        <ul>
+            <li><a href="#top">Top</a></li>
+            <li><a href="#nav-grid">The Grid System</a></li>
+            <li><a href="#nav-typography">Typography</a></li>
+            <li><a href="#nav-buttons">Buttons</a></li>
+            <li><a href="#nav-forms">Forms</a></li>
+            <li><a href="#nav-icons">Icons</a></li>
+            <li><a href="#nav-feedback">Feedback</a></li>
+            <li><a href="#nav-navigation">Navigation</a></li>
+            <li><a href="#nav-animations">Animations</a></li>
+            <li><a href="#nav-tabs">Tabs</a></li>
+            <li><a href="#nav-accordions">Accordions</a></li>
+            <li><a href="#nav-carousels">Carousels</a></li>
+        </ul>
+    </div> <!-- end pres-widget -->
     
+    <!-- Presentation Header -->
+    <div class="container">
+        <header class="pres-header">
+            <h3>Tut+ Pattern Library</h3>
+
+            <p>A project by Adi Purdila. Made for a <a href="http:tutsplus.com">Tuts+</a></p>
+        </header><!-- end .pres-header -->
+    </div><!-- end .container -->
+
+
     <!-- The Grid System -->
     <section>
         <div class="container">
-            <h1>The Grid System</h1>
+            <h1 id="nav-grid">The Grid System</h1>
             <hr>
             <div class="row">
                 <div class="col-12">
@@ -230,12 +266,33 @@
                     <div class="demo-col">.col-half</div><!-- end .demo-col -->
                 </div><!-- end .col-half -->
             </div><!-- end .row -->
+
+            <div class="row">
+                <div class="col-4">
+                    <h5>Notes</h5>
+                    <p>Hres's a few code snippets that will explain how the grid works</p>
+                </div><!-- end .col-4 -->
+                <div class="col-8">
+                    <pre class="line-numbers"><code class="language-markup">&lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;col-quarter&quot;&gt;
+        &lt;div class=&quot;demo-col&quot;&gt;.lt;/div&gt;&lt;!-- end .dem
+    &lt;/div&gt;&lt;!-- end .col-qu
+    &lt;div class=&quot;col-quart
+        &lt;div class=&quot;demo-;.lt;/div&gt;&lt;!-- end .d
+    &lt;/div&gt;&lt;!-- end .col-
+    &lt;div class=&quot;col-ha
+        &lt;div class=&quot;de&gt;./div&gt;&lt;!-- end .dem
+    &lt;/div&gt;&lt;!-- end .col-half --&gt;
+&lt;/div&gt;&lt;!-- end .row --&gt;</code></pre>
+                    <!-- Use www.elliotswan.com/postable/ -->
+                </div><!-- end .col-8 -->
+            </div><!-- end .row -->
         </div><!-- end .container -->
     </section>
 
     <!-- Typography -->
-    <section class="container">
-        <h1></h1>
+    <section class="container" id="nav-typography">
+        <h1>Typography</h1>
         <hr>
         <div class="row">
             <div class="col-half">
@@ -250,7 +307,7 @@
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <a href="#">Dignissimos at et corporis consectetur</a>, enim. Autem reprehenderit, inventore ea voluptatum, eaque dolorem aut corrupti veniam sit nemo delectus, hic qui. Natus dignissimos consequuntur iusto dolores cum, maxime repudiandae laudantium alias! Nobis neque doloribus enim et mollitia possimus ratione. <strong>Quae eum sint repellendus molestiae, vel necessitatibus quia nulla cupiditate ipsam. Distinctio voluptatibus voluptate, eius atque</strong>! Explicabo nisi, dolores impedit eius amet nihil assumenda accusantium enim? Vero minus facilis harum, animi qui beatae laudantium fugit? Voluptatum, provident ipsam alias. Accusantium eos officia veniam explicabo eveniet incidunt quisquam! Eaque minima commodi nam in ipsa.</p>
                 <p>Beatae obcaecati quod, ipsam, ducimus nihil voluptates, voluptatem expedita autem repellendus eaque rerum repudiandae. <em>Quasi error totam repellendus, quos non velit quae quod est libero nemo at fuga?</em> Laudantium commodi eaque vitae, consectetur perferendis dolor eum suscipit culpa! Deleniti blanditiis quisquam, voluptatibus dolores obcaecati pariatur odit totam officia culpa ut, fugit error debitis deserunt! <strike>Consectetur adipisci quo officiis, suscipit odio at consequuntur voluptatum ratione tenetur, ipsum maiores exercitationem quam error amet sunt neque omnis.</strike> Repellat dignissimos quae debitis aliquam natus expedita labore praesentium rerum doloremque? Corporis modi sapiente ab nobis voluptatibus, quis cum cupiditate molestias dolore quaerat quas, est! Explicabo!</p>
 
-<pre><code>.container {
+<pre class="line-numbers"><code class="language-css">.container {
   /* Main Container. */
   width: 95%;
   margin: 0 auto;
@@ -295,7 +352,7 @@
     <!-- Bottoms -->
     <section>
         <div class="container">
-            <h1>Buttons</h1>
+            <h1 id="nav-buttons">Buttons</h1>
             <hr>
 
             <div class="row">
@@ -331,7 +388,7 @@
     <!-- Forms -->
     <section>
         <div class="container">
-            <h1>Forms</h1>
+            <h1 id="nav-forms">Forms</h1>
             <hr />
             <form action="">
                 <div class="row">
@@ -459,7 +516,7 @@
     <!-- Icons -->
     <section>
         <div class="container">
-            <h1>Icon</h1>
+            <h1 id="nav-icons">Icon</h1>
             <hr />
             <div class="row">
                 <div class="col-half">
@@ -486,7 +543,7 @@
 
     <section>
         <div class="container">
-            <h1>Feedback</h1>
+            <h1 id="nav-feedback">Feedback</h1>
             <hr />
             <div class="row">
                 <div class="col-half">
@@ -522,12 +579,12 @@
     <!-- Navigation -->
     <section>
         <div class="container">
-            <h1>Navigation</h1>
+            <h1 id="nav-navigation">Navigation</h1>
             <hr />
             <div class="row navbar-container"><!-- add additional class navbar-container for targetting -->
                 <div class="col-4">
                     <a href="#" class="logo">
-                        <img src="http://placehold.it/xfoo&text=Logo" alt="Demo logo" />
+                        <img src="http://placehold.it/150x100&text=Logo" alt="Demo logo" />
                     </a>
                 </div><!-- end .col-4 -->
                 <div class="col-8">
@@ -569,7 +626,7 @@
     <!-- Animations -->
     <section>
         <div class="container">
-            <h1>Animations</h1>
+            <h1 id="nav-animations">Animations</h1>
             <hr />
 
             <div class="row" id="demo-animations">
@@ -627,7 +684,7 @@
     <!-- Accordion -->
     <section>
         <div class="container">
-            <h1>Accordions</h1>
+            <h1 id="nav-accordions">Accordions</h1>
             <hr />
             <div class="accordion">
                 <div class="accordion-element">
@@ -654,7 +711,7 @@
     <!-- Carousels -->
     <div class="section">
         <div class="container">
-            <h1 id="nav-carousels">Carousels</h1>
+            <h1 id="nav-carousels" id="nav-carousels">Carousels</h1>
 
             <hr>
 
@@ -678,6 +735,7 @@
     <script src="bower_components/superfish/dist/js/superfish.min.js"></script>
     <script src="bower_components/superfish/dist/js/hoverIntent.js"></script>
     <script src="bower_components/jquery-cycle2/build/jquery.cycle2.min.js"></script>
+    <script src="js/prism.js"></script>
     <script src="js/scripts.js"></script>
 </body>
 </html>
